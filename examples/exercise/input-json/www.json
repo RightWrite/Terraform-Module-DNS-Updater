@@ -4,5 +4,6 @@
     ],
     "ttl": 300,
     "zone": "example.com.",
-    "dns_record_type": "a"
+    "dns_record_type": "a",
+      "name":"www"
 }

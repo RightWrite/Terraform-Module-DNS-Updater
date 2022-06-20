@@ -4,5 +4,6 @@
     ],
     "ttl": 600,
     "zone": "example.com.",
-    "dns_record_type": "a"
+    "dns_record_type": "a",
+     "name":"procurement"
 }
