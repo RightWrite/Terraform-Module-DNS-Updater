@@ -6,6 +6,13 @@ provider "dns" {
 }
 
 module "dns_updater" {
-  
-  source = "../../."
+
+  source            = "../../modules/dns/."
+  dns_a_record_name = "www"
+  dns_a_record_addresses = ["192.168.100.1"]
+  dns_a_record_ttl = 300
+}
+
+output "dns_a_record_id" {
+  value = module.dns_updater.dns_a_record_id
 }

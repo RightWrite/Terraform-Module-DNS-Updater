@@ -7,10 +7,8 @@ provider "dns" {
 
 module "dns_updater" {
 
-  source = "../../."
-# ----------------------------------------
-# Write your Terraform module inputs here
-# ----------------------------------------
-
-
+  source            = "../../modules/dns/."
+  dns_a_record_ttl  = var.ttl
+  dns_a_record_name = var.name
+  dns_a_record_addresses = var.addresses
 }
